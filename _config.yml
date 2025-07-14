@@ -1,7 +1,7 @@
 title: "Shikara CMS"
 description: "CMS statis gratis dengan Jekyll + Prose.io"
-baseurl: ""                      # jika repo di https://username.github.io/Shikara
-url: "https://username.github.io"
+baseurl: "https://www.rafifsadid.my.id/Shikara"                      # jika repo di https://username.github.io/Shikara
+url: "https://rafifsadid.my.id"
 collections:
   articles:
     output: true
