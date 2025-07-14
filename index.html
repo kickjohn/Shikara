@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Beranda"
+---
+<h1 class="mb-4">Artikel Terbaru</h1>
+<div class="row g-4">
+  {% for post in site.articles %}
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        {% if post.banner %}
+          <img src="{{ post.banner }}" class="card-img-top" alt="Banner">
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          <a href="{{ post.url }}" class="mt-auto btn btn-outline-primary">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

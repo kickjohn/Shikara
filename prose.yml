@@ -1,0 +1,16 @@
+prose:
+  site: "https://username.github.io/Shikara"
+collections:
+  - label: "Articles"
+    folder: "_collections/articles"
+    create: true
+    extension: "md"
+    sortBy: "date"
+    order: "descending"
+    fields:
+      - { name: "title", label: "Judul" }
+      - { name: "slug", label: "Slug (URL)" }
+      - { name: "date", label: "Tanggal", type: "date" }
+      - { name: "author", label: "Penulis" }
+      - { name: "banner", label: "URL Banner" }
+      - { name: "content", label: "Konten", type: "markdown" }

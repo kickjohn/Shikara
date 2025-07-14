@@ -1,0 +1,11 @@
+title: "Shikara CMS"
+description: "CMS statis gratis dengan Jekyll + Prose.io"
+baseurl: ""                      # jika repo di https://username.github.io/Shikara
+url: "https://username.github.io"
+collections:
+  articles:
+    output: true
+markdown: kramdown
+permalink: /artikel/:slug/
+excerpt_separator: "<!-- more -->"
+theme: null                      # kita custom sendiri
